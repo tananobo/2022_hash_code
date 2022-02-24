@@ -11,7 +11,9 @@ input_filepath = "input/" + file_name
 print(input_filepath)
 # データ読み込み
 info = read_input.read_input(input_filepath)
-print(info)
+contributer_list, skill_list, ability_matrix = info
+print(contributer_list[0],skill_list[0],ability_matrix[0][0])
 
-""" input_info = recieve_input(problem)
-final_score = count_score(submission, num_contributers, project_info, employee_list) """
+num_contributers = len(contributer_list)
+
+final_score = count_score(submission, num_contributers, project_info, contributer_list) 
