@@ -95,11 +95,10 @@ def read_input(input_dir):
     return contributer_list, skill_list, ability_matrix, project_list, project_information, project_skill_matrix
 
 
-""" contributer_list, skill_list, ability_matrix, project_list, project_information, project_skill_matrix = read_input(input_dir)
+contributer_list, skill_list, ability_matrix, project_list, project_information, project_skill_matrix = read_input(input_dir)
 print(contributer_list)
 print(skill_list)
 print(ability_matrix)
 print(project_list)
 print(project_information)
 print(project_skill_matrix)
- """
