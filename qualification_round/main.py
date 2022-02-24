@@ -17,6 +17,5 @@ print(contributer_list,skill_list[0],ability_matrix[0][0]) """
 num_contributers = len(contributer_list)
 
 submission = ["3", "WebServer", "Bob Anna", "Logging", "Anna", "WebChat", "Maria Bob"]
-project_info = ["Logging 5 10 5 1", "WebServer 7 10 7 2", "WebChat 10 20 20 2"]
 final_score = count_score.count_score(submission, num_contributers, project_list, project_information, contributer_list) 
 print(final_score)
