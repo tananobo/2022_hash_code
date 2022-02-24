@@ -16,4 +16,4 @@ print(contributer_list[0],skill_list[0],ability_matrix[0][0])
 
 num_contributers = len(contributer_list)
 
-final_score = count_score(submission, num_contributers, project_info, contributer_list) 
+#final_score = count_score(submission, num_contributers, project_info, contributer_list) 
