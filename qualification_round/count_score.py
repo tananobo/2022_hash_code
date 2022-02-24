@@ -4,14 +4,18 @@ def count_score(submission, num_contributers, project_info, employee_list):
     Logging 5 10 5 1
     """
     score = 0
-    num_project = submission[0]
+    num_project = int(submission[0])
+    print("np",num_project)
     schedule_list = [0] * num_contributers
     args_iter = submission[1:]
+    print("args_iter:", args_iter)
     employee_dict = {}
     for idx, name in enumerate(employee_list):
         employee_dict[name] = idx
-    for i in range(num_project, 2):
-        project = args_iter[i].split()
+    print("employee_dict:", employee_dict)
+    for i in range(num_project):
+        print(i)
+        project = args_iter[2*i]
         assignees = args_iter[i+1].split()
         busiest_contributer_startingday = 0
         for contributer in assignees:
