@@ -1,5 +1,6 @@
 
 
+
 input_dir = "input/a_an_example.in.txt"
 
 def read_input(input_dir):
@@ -10,6 +11,10 @@ def read_input(input_dir):
     skill_list = []
     #人とスキルのマトリクスを入れるリスト
     ability_matrix = []
+
+    project_list = []
+    project_information = []
+    project_skill_matrix = []
 
     input_file = open(input_dir, "r", encoding = "UTF-8")
     input_data = input_file.readlines()
@@ -27,7 +32,7 @@ def read_input(input_dir):
             contributer_num = int(input_data[i][0])
             project_num = int(input_data[i][1])
 
-        else:
+        elif contributer_cnt < contributer_num:
             if skill_num == 0:
                 contributer_list.append(input_data[i][0])
                 skill_num = int(input_data[i][1])
@@ -38,9 +43,13 @@ def read_input(input_dir):
                 if skill_cnt == skill_num:
                     skill_num = 0
                     contributer_cnt += 1
+        else:
+            if len(input_data[i]) == 5:
+                project_list.append(input_data[i][0])
+                project_information.append(input_data[i][1:5])
+            else:
+                continue
 
-        if contributer_cnt == contributer_num:
-            break
 
     skill_list = list(set(skill_list))    
 
@@ -49,13 +58,17 @@ def read_input(input_dir):
         skill_row = [0]*len(skill_list)
         ability_matrix.append(skill_row)
 
+    for i in range(len(project_list)):
+        skill_row = [0]*len(skill_list)
+        project_skill_matrix.append(skill_row)
     ##
     skill_num = 0 
     contributer_cnt = 0
+    project_cnt = 0
     for i in range(input_length):
         if i == 0:
             continue
-        else:
+        elif contributer_cnt < contributer_num:
             if skill_num == 0:
                 contributer_name = input_data[i][0]
                 contributer_index = contributer_list.index(contributer_name)
@@ -70,14 +83,23 @@ def read_input(input_dir):
                     skill_num = 0
                     contributer_cnt += 1
 
-        if contributer_cnt == contributer_num:
-            break
+        else:
+            if len(input_data[i]) == 5:
+                project_name = input_data[i][0]
+                project_index = project_list.index(project_name)
+            else:
+                skill_name = input_data[i][0]
+                skill_index = skill_list.index(skill_name)
+                project_skill_matrix[project_index][skill_index] = int(input_data[i][1])
 
-    return contributer_list, skill_list, ability_matrix
+    return contributer_list, skill_list, ability_matrix, project_list, project_information, project_skill_matrix
 
 
-""" contributer_list, skill_list, ability_matrix = read_input(input_dir)
+""" contributer_list, skill_list, ability_matrix, project_list, project_information, project_skill_matrix = read_input(input_dir)
 print(contributer_list)
 print(skill_list)
 print(ability_matrix)
+print(project_list)
+print(project_information)
+print(project_skill_matrix)
  """
