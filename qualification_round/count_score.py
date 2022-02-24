@@ -25,6 +25,3 @@ def count_score(submission, num_contributers, project_info, employee_list):
         for contributer in assignees:
             schedule_list[employee_dict[contributer]] = end_day
     return score
-
-
-
