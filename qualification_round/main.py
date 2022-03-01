@@ -2,6 +2,7 @@ import count_score
 import read_input
 import argparse
 
+# recieve input problem "a-f" from CLI / output file path
 parser = argparse.ArgumentParser()
 parser.add_argument('problem')
 args = parser.parse_args()
@@ -9,6 +10,7 @@ file_name_dict = {"a": "a_an_example.in.txt", "b": "b_better_start_small.in.txt"
 file_name = file_name_dict[args.problem]
 input_filepath = "input/" + file_name
 print(input_filepath)
+
 # データ読み込み
 contributer_list, skill_list, ability_matrix, project_list, project_information, project_skill_matrix = read_input.read_input(input_filepath)
 """ contributer_list, skill_list, ability_matrix = info

@@ -7,8 +7,11 @@ def read_input(input_dir):
 
     #人の名前を入れるリスト
     contributer_list = []
+    contributer_to_idx = {}
+    idx_to_contributer = {}
     #スキル名を入れるリスト
     skill_list = []
+    contributer_skill_dict = {}
     #人とスキルのマトリクスを入れるリスト
     ability_matrix = []
 
@@ -27,22 +30,17 @@ def read_input(input_dir):
     ##人のリストとスキルのリストを作る
     skill_num = 0 
     contributer_cnt = 0
-    for i in range(input_length):
-        if i == 0:
-            contributer_num = int(input_data[i][0])
-            project_num = int(input_data[i][1])
-
-        elif contributer_cnt < contributer_num:
-            if skill_num == 0:
-                contributer_list.append(input_data[i][0])
-                skill_num = int(input_data[i][1])
-                skill_cnt = 0
-            else:
-                skill_list.append(input_data[i][0])
-                skill_cnt += 1
-                if skill_cnt == skill_num:
-                    skill_num = 0
-                    contributer_cnt += 1
+    contributer_num = int(input_data[0][0])
+    project_num = int(input_data[0][1])
+    for i in range(contributer_num):
+        contributer_name = input_data[2*i+1][0]
+        skill_num = int(input_data[2*i+1][1])
+        contributer_to_idx[i] = contributer_name
+        idx_to_contributer[contributer_name] = i
+        for j in range(skill_num):
+            contributer_skill_dict[contributer_name] = [input_data[2*i+1][2*i],int(input_data[2*i+1][2*i+1])]
+    for i in range(project_num):
+        idx = 2*contributer_num + i
         else:
             if len(input_data[i]) == 5:
                 project_list.append(input_data[i][0])
