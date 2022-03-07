@@ -2,11 +2,12 @@
 class Project:
     def __init__(self, project_name, project_period, max_score, best_day, num_role):
         self.project_name = project_name
-        self.project_period = project_period
-        self.max_score = max_score
-        self.best_day = best_day
-        self.num_role = num_role
+        self.project_period = int(project_period)
+        self.max_score = int(max_score)
+        self.best_day = int(best_day)
+        self.num_role = int(num_role)
         self.ness_skill = []
+        self.assignee_name = []
         print("new Project {} has been created!".format(project_name))
 
     def add_skill(self, skill_name, skill_level):
@@ -22,12 +23,14 @@ class Project:
 class Contributor:
     def __init__(self, contributor_name, num_skill):
         self.contributor_name = contributor_name
-        self.num_skill = num_skill
+        self.num_skill = int(num_skill)
         self.skillset = {}
+        self.scheduled_period = 0
+        self.assigned_project = set()
         print("new Contributor {} has been hired!".format(contributor_name))
 
     def add_skill(self, skill_name, skill_level):
-        self.skillset[skill_name] = skill_level
+       self.skillset[skill_name] = skill_level
 
     def levelup_skill(self, skill_name):
         if skill_name in self.skillset:
