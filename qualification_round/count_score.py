@@ -5,16 +5,16 @@ def count_score(submission, num_contributers, project_list, project_information,
     """
     score = 0
     num_project = int(len(project_list))
-    #print("np",num_project)
+    # print("np",num_project)
     schedule_list = [0] * num_contributers
     args_iter = submission[1:]
-    #print("args_iter:", args_iter)
+    # print("args_iter:", args_iter)
     employee_dict = {}
     for idx, name in enumerate(employee_list):
         employee_dict[name] = idx
-    #print("employee_dict:", employee_dict)
+    # print("employee_dict:", employee_dict)
     project_dict = {}
-    for project_name, project_info in zip(project_list,project_information):
+    for project_name, project_info in zip(project_list, project_information):
         project_dict[project_name] = [int(x) for x in project_info]
     print(project_dict)
     for i in range(num_project):

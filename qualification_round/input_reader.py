@@ -18,6 +18,7 @@ class Project:
         else:
             return max(self.max_score - (start_day + self.project_period - self.best_day), 0)
 
+
 class Contributor:
     def __init__(self, contributor_name, num_skill):
         self.contributor_name = contributor_name
@@ -33,11 +34,12 @@ class Contributor:
             self.skillset[skill_name] += 1
         else:
             self.skillset[skill_name] = 1
-    
+
     def ask_skill_level(self, skill_name):
         if skill_name in self.skillset:
             return self.skillset[skill_name]
         return 0
+
 
 def read_input(location):
     with open(location) as f:
@@ -59,6 +61,7 @@ def read_input(location):
                 project[project_name].add_skill(skill_name, int(skill_level))
             line = f.readline()
     return contributor, project
+
 
 if __name__ == "__main__":
     contributor, project = read_input("input/a_an_example.in.txt")
