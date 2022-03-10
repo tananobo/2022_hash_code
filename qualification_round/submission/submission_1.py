@@ -1,7 +1,0 @@
-print(3)
-print("WebServer")
-print("Bob Anna")
-print("Logging")
-print("Anna")
-print("WebChat")
-print("Maria Bob")
