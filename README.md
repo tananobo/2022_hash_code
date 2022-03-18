@@ -16,9 +16,11 @@ https://github.com/hexmod/hash-code-2022 (2539814 points Python)
 
 https://github.com/prague-pandas/hashcode-2022-qualification (score: 2,730,765 Python, Ruby)
 
-----Japanese----
+## Japanese below
 
 ここは私（棚瀬）と高比良さんと秋間さんがhashcode2022に挑戦するためのリポジトリです。
+
+### hash code information
 
 [hash code](https://codingcompetitions.withgoogle.com/hashcode/)
 
