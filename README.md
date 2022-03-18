@@ -8,7 +8,7 @@ branch: tananobo = 1639241 points
 
 Teacher->
 https://github.com/mahmoudjobeel1/Google-HashCode-2022-Solutions (3353067point Java)
-
+https://github.com/mhmd-azeez/google-hashcode-2022 (2,858,938 points C#)
 ----Japanese----
 
 ここは私（棚瀬）と高比良さんと秋間さんがhashcode2022に挑戦するためのリポジトリです。
