@@ -12,6 +12,7 @@ https://github.com/mahmoudjobeel1/Google-HashCode-2022-Solutions (3353067point J
 
 https://github.com/mhmd-azeez/google-hashcode-2022 (2,858,938 points C#)
 
+https://github.com/hexmod/hash-code-2022 (2539814 points Python)
 
 ----Japanese----
 
