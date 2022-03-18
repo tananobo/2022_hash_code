@@ -6,6 +6,11 @@ This repo is for challenging HashCode 2022 by me, Takahira, Akima.
 
 branch: tananobo = 1639241 points
 
+Teacher->
+https://youtu.be/yfXu9_Za_mg?t=2083 (3353067point Java)
+
+----Japanese----
+
 ここは私（棚瀬）と高比良さんと秋間さんがhashcode2022に挑戦するためのリポジトリです。
 
 [hash code](https://codingcompetitions.withgoogle.com/hashcode/)
