@@ -7,7 +7,7 @@ This repo is for challenging HashCode 2022 by me, Takahira, Akima.
 branch: tananobo = 1639241 points
 
 Teacher->
-https://youtu.be/yfXu9_Za_mg?t=2083 (3353067point Java)
+https://github.com/mahmoudjobeel1/Google-HashCode-2022-Solutions (3353067point Java)
 
 ----Japanese----
 
