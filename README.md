@@ -1,7 +1,10 @@
 #HashCodeSolved
 #HashCode-2022
+#python
 
 This repo is for challenging HashCode 2022 by me, Takahira, Akima.
+
+branch: tananobo = 1639241 points
 
 ここは私（棚瀬）と高比良さんと秋間さんがhashcode2022に挑戦するためのリポジトリです。
 
