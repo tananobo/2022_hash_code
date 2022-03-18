@@ -1,3 +1,6 @@
+#HashCodeSolved
+#HashCode-2022
+
 This repo is for challenging HashCode 2022 by me, Takahira, Akima.
 
 ここは私（棚瀬）と高比良さんと秋間さんがhashcode2022に挑戦するためのリポジトリです。
