@@ -1,12 +1,16 @@
+# Overview
+
+This repo is for challenging HashCode 2022 by me, Takahira, Akima.
+
 #HashCodeSolved
 #HashCode-2022
 #python
 
-This repo is for challenging HashCode 2022 by me, Takahira, Akima.
+## challenging history
+2022/2/25 
+2022/3/10 branch: tananobo = 1639241 points
 
-branch: tananobo = 1639241 points
-
-Teacher->
+## Teacher reository
 
 https://github.com/mahmoudjobeel1/Google-HashCode-2022-Solutions (3353067point Java)
 
