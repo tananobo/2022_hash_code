@@ -9,7 +9,7 @@ This repo is for challenging HashCode 2022 by me, Takahira, Akima.
 #python
 
 ## challenging history
-- 2022/2/25 7,402 points
+- 2022/2/25 7,402 points / 5075th (Thanks, Takahira-san!)
 - 2022/3/10 branch: tananobo = 1,639,241 points
 
 ## explanation about tananobo branch
@@ -19,6 +19,9 @@ This repo is for challenging HashCode 2022 by me, Takahira, Akima.
 python main.py <[a-f(problem code)]>
 ```
 ### strategy
+
+Anyway, I want to get plus score by coding (not manually). This is minimum function at start point.
+
 1. create Contributor and Project class in input_reader.py
 2. list of Projects are __randomly shuffled__
 3. Iterate Projects using for loop
