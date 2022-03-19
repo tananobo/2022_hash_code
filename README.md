@@ -35,39 +35,26 @@ Anyway, I want to get plus score by coding (not manually). This is minimum funct
 - Projectリストを式(ベストデイ-プロジェクト期間)が小さいものから順にsortしている。（ただしマイナスになるものは式の結果は9999999とする) [link](https://github.com/hexmod/hash-code-2022/blob/2cfa240fb56891f68b69af9619a1388938b5f138/src/main.py#L91)
 - その後の処理はほぼ同じだが、Projectを受領できた場合にContributorをレベルアップさせている [link](https://github.com/hexmod/hash-code-2022/blob/2cfa240fb56891f68b69af9619a1388938b5f138/src/main.py#L109)
 - 全てのタスクにContributorをアサインできなかった場合、Mentorを探すモードへ入る
-- （コードが間違っている気はしますが[link](https://github.com/hexmod/hash-code-2022/blob/2cfa240fb56891f68b69af9619a1388938b5f138/src/Project.py#L19)*）タスクがにContributorが割り当たっているか確認し、いない場合メンターの存在を確認
+- （コードが間違っている気はしますが[link](https://github.com/hexmod/hash-code-2022/blob/2cfa240fb56891f68b69af9619a1388938b5f138/src/Project.py#L19)[^1]）タスクがにContributorが割り当たっているか確認し、いない場合メンターの存在を確認
 - メンターはこれまでに割り当てていた人の中から必要スキルをもっているかチェック
+- メンターがいた場合は、一個レベル下のスキルの人を探す
+- それでもプロジェクトが受けられない場合、仮アサインしていた人たちを解放
+- メンター制度で割り当たった人のレベルアップ機能がないような
 
+[^1]:return count in self.assignedRolesではなく,return role in self.assignedRolesでは？
 
-\*
-```
-return count in self.assignedRoles
-```
-ではなく、
-```
-return role in self.assignedRoles
-```
-では？
-
-<!--
-Comparison "Project" class
-
-- def \_\_init\_\_ -> almost same
-- function
-
-| tananobo | hexmod | comment |
-| -------- | ------ | ------- |
-| add_skill | add_role | same |
-| count_score | | count score from start_day,project_period,best_day and max_score| 
--->
+### next to do for tananobo"2"
+- [ ] sort Project list
+- [ ] add level up Contributor
+- [ ] add mentor system
 
 ## Reference Repo
 
-https://github.com/mahmoudjobeel1/Google-HashCode-2022-Solutions (3353067point Java)
+https://github.com/mahmoudjobeel1/Google-HashCode-2022-Solutions (3,353,067point Java)
 
 https://github.com/mhmd-azeez/google-hashcode-2022 (2,858,938 points C#)
 
-https://github.com/hexmod/hash-code-2022 (2539814 points Python)
+https://github.com/hexmod/hash-code-2022 (2,539,814 points Python)
 
 https://github.com/prague-pandas/hashcode-2022-qualification (score: 2,730,765 Python, Ruby)
 
