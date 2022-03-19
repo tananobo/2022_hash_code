@@ -20,7 +20,7 @@ python main.py <[a-f(problem code)]>
 ```
 ### strategy
 
-Anyway, I want to get plus score by coding (not manually). This is minimum function at start point.
+Anyway, I wanted to get plus score by coding (not manually). This is minimum function as a start point.
 
 1. create Contributor and Project class in input_reader.py
 2. list of Projects are __randomly shuffled__
