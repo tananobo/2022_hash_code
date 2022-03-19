@@ -1,5 +1,7 @@
 # Overview
 
+![top](https://codejam.googleapis.com/dashboard/get_file/AQj_6U2TJsZ9UXhJfWvMM5G2u4j78N84faQu6TIWTXYEIRmnX69qtXjrlA/team.png)
+
 This repo is for challenging HashCode 2022 by me, Takahira, Akima.
 
 #HashCodeSolved
@@ -7,8 +9,8 @@ This repo is for challenging HashCode 2022 by me, Takahira, Akima.
 #python
 
 ## challenging history
-2022/2/25 
-2022/3/10 branch: tananobo = 1639241 points
+- 2022/2/25 7,402 points
+- 2022/3/10 branch: tananobo = 1,639,241 points
 
 ## Teacher reository
 
