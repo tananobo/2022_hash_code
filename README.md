@@ -18,6 +18,13 @@ This repo is for challenging HashCode 2022 by me, Takahira, Akima.
 ```
 python main.py <[a-f(problem code)]>
 ```
+### strategy
+1. create Contributor and Project class in input_reader.py
+2. list of Projects are __randomly shuffled__
+3. Iterate Projects using for loop
+4. Check Projects required skills and Contributor skill one by one
+5. If found, assign Contributor to each Project
+6. __No mentor system or level up function are equipped at this code__
 
 ## Reference Repo
 
