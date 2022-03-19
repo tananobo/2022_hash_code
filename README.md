@@ -26,6 +26,17 @@ python main.py <[a-f(problem code)]>
 5. If found, assign Contributor to each Project
 6. __No mentor system or level up function are equipped at this code__
 
+### learn from [hexmod](https://github.com/hexmod/hash-code-2022)
+Comparison "Project" class
+
+- def \_\_init\_\_ -> almost same
+- function
+
+| tananobo | hexmod | comment |
+| -------- | ------ | ------- |
+| add_skill | add_role | same |
+| count_score | | count score from start_day,project_period,best_day and max_score| 
+
 ## Reference Repo
 
 https://github.com/mahmoudjobeel1/Google-HashCode-2022-Solutions (3353067point Java)
