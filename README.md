@@ -24,9 +24,17 @@ python main.py <[a-f(problem code)]>
 3. Iterate Projects using for loop
 4. Check Projects required skills and Contributor skill one by one
 5. If found, assign Contributor to each Project
-6. __No mentor system or level up function are equipped at this code__
+6. __If not found, give up taking this Project__
+7. __No mentor system or level up function are equipped at this code__
 
 ### learn from [hexmod](https://github.com/hexmod/hash-code-2022)
+
+- Projectリストを式(ベストデイ-プロジェクト期間)が小さいものから順にsortしている。（ただしマイナスになるものは式の結果は9999999とする) [link](https://github.com/hexmod/hash-code-2022/blob/2cfa240fb56891f68b69af9619a1388938b5f138/src/main.py#L91)
+- その後の処理はほぼ同じだが、Projectを受領できた場合にContributorをレベルアップさせている [link](https://github.com/hexmod/hash-code-2022/blob/2cfa240fb56891f68b69af9619a1388938b5f138/src/main.py#L109)
+- a
+
+
+<!--
 Comparison "Project" class
 
 - def \_\_init\_\_ -> almost same
@@ -36,6 +44,7 @@ Comparison "Project" class
 | -------- | ------ | ------- |
 | add_skill | add_role | same |
 | count_score | | count score from start_day,project_period,best_day and max_score| 
+-->
 
 ## Reference Repo
 
