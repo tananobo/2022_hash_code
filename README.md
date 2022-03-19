@@ -35,8 +35,19 @@ Anyway, I want to get plus score by coding (not manually). This is minimum funct
 - Projectリストを式(ベストデイ-プロジェクト期間)が小さいものから順にsortしている。（ただしマイナスになるものは式の結果は9999999とする) [link](https://github.com/hexmod/hash-code-2022/blob/2cfa240fb56891f68b69af9619a1388938b5f138/src/main.py#L91)
 - その後の処理はほぼ同じだが、Projectを受領できた場合にContributorをレベルアップさせている [link](https://github.com/hexmod/hash-code-2022/blob/2cfa240fb56891f68b69af9619a1388938b5f138/src/main.py#L109)
 - 全てのタスクにContributorをアサインできなかった場合、Mentorを探すモードへ入る
-- （コードが間違っている気はしますが）タスクが満たされているか
+- （コードが間違っている気はしますが[link](https://github.com/hexmod/hash-code-2022/blob/2cfa240fb56891f68b69af9619a1388938b5f138/src/Project.py#L19)*）タスクがにContributorが割り当たっているか確認し、いない場合メンターの存在を確認
+- メンターはこれまでに割り当てていた人の中から必要スキルをもっているかチェック
 
+
+\*
+```
+return count in self.assignedRoles
+```
+ではなく、
+```
+return role in self.assignedRoles
+```
+では？
 
 <!--
 Comparison "Project" class
