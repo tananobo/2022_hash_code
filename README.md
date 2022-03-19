@@ -12,7 +12,7 @@ This repo is for challenging HashCode 2022 by me, Takahira, Akima.
 - 2022/2/25 7,402 points / 5075th (Thanks, Takahira-san!)
 - 2022/3/10 branch: tananobo = 1,639,241 points
 
-## explaination about tananobo branch
+## explanation about tananobo branch
 
 ### how to use?
 ```
