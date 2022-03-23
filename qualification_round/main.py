@@ -17,7 +17,15 @@ print("read_data_from :", input_filepath)
 contributor, project = read_input(input_filepath)
 
 project_name_list = [key for key in project]
-random.shuffle(project_name_list)
+sorted_project_name_list = []
+
+for project_name in project_name_list:
+    sorted_num = project[project_name].best_day - project[project_name].project_period
+    sorted_project_name_list.append((sorted_num, project_name))
+
+project_name_list = [a for _, a in sorted(sorted_project_name_list)]
+
+# random.shuffle(project_name_list)
 # print(project_name_list)
 
 num_recieved_project = 0
