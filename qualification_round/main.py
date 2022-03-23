@@ -1,7 +1,7 @@
 import random
 import argparse
 
-import count_score
+# import count_score
 from input_reader import Project, Contributor, read_input
 
 # recieve input problem "a-f" from CLI / output file path
@@ -45,10 +45,17 @@ for selected_project_name in project_name_list:
                 selected_project.assignee_name.append(candidate.contributor_name)
                 break
         if not find_skilled_person:
-            print("{} can not be accepted!".format(selected_project_name))
+            # print("{} can not be accepted!".format(selected_project_name))
             break
     if not find_skilled_person:
         continue
+    else:
+        for name, skill in zip(selected_project.assignee_name, selected_project.ness_skill):
+            if contributor[name].ask_skill_level(skill[0]) == skill[1]:
+                print("=====level up!=====")
+                print(contributor[name].contributor_name, contributor[name].ask_skill_level(skill[0]))
+                contributor[name].levelup_skill(skill[0])
+                print(contributor[name].contributor_name, contributor[name].ask_skill_level(skill[0]))
     num_recieved_project += 1
     name_recieved_project.append(selected_project_name)
 

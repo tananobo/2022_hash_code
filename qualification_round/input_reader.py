@@ -8,7 +8,7 @@ class Project:
         self.num_role = int(num_role)
         self.ness_skill = []
         self.assignee_name = []
-        print("new Project {} has been created!".format(project_name))
+        # print("new Project {} has been created!".format(project_name))
 
     def add_skill(self, skill_name, skill_level):
         self.ness_skill.append((skill_name, skill_level))
@@ -27,7 +27,7 @@ class Contributor:
         self.skillset = {}
         self.scheduled_period = 0
         self.assigned_project = set()
-        print("new Contributor {} has been hired!".format(contributor_name))
+        # print("new Contributor {} has been hired!".format(contributor_name))
 
     def add_skill(self, skill_name, skill_level):
        self.skillset[skill_name] = skill_level
