@@ -45,7 +45,7 @@ Anyway, I wanted to get plus score by coding (not manually). This is minimum fun
 
 ### next to do for tananobo"2"
 - [x] sort Project list:-> score 2,124,623
-- [ ] add level up Contributor
+- [x] add level up Contributor:-> 2,091,570??
 - [ ] add mentor system
 
 ## Reference Repo
