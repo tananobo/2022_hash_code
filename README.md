@@ -44,8 +44,8 @@ Anyway, I wanted to get plus score by coding (not manually). This is minimum fun
 [^1]:return count in self.assignedRolesではなく,return role in self.assignedRolesでは？
 
 ### next to do for tananobo"2"
-- [x] sort Project list:-> score 2,124,623
-- [x] add level up Contributor:-> 2,091,570??
+- [x] sort Project list:-> score 2,124,623 (found some error)
+- [x] add level up Contributor:-> 2,452,669
 - [ ] add mentor system
 
 ## Reference Repo
