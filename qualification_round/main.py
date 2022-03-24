@@ -49,8 +49,9 @@ for selected_project_name in project_name_list:
             break
     if not find_skilled_person:
         continue
-    else:
+    else: # check level up
         for name, skill in zip(selected_project.assignee_name, selected_project.ness_skill):
+            contributor[name].scheduled_period = project_end_day
             if contributor[name].ask_skill_level(skill[0]) == skill[1]:
                 print("=====level up!=====")
                 print(contributor[name].contributor_name, contributor[name].ask_skill_level(skill[0]))
